@@ -1,0 +1,201 @@
+/* Start Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4.8rem 0 3.2rem;
+}
+
+.list-lis {
+  display: flex;
+  gap: 2.4rem;
+}
+.item,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--Very-dark-blue);
+  transition: 0.3s;
+  font-size: 1.8rem;
+}
+.item,
+a:hover {
+  color: var(--Soft-red);
+}
+/* End Header */
+
+/* Start toggle menu */
+.toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: none;
+  transition: 0.3s;
+}
+.toggle span {
+  border-radius: 50px;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--Very-dark-blue);
+  transition: 0.3s;
+}
+.toggle span:first-child {
+  top: 0;
+}
+.toggle span:nth-child(2) {
+  top: 10px;
+}
+.toggle span:last-child {
+  top: 20px;
+}
+
+.toggle.active span:first-child {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.toggle.active span:last-child {
+  transform: rotate(-45deg);
+}
+.toggle.active span:first-child,
+.toggle.active span:last-child {
+  top: 10px;
+  background-color: red;
+}
+/* Start toggle menu */
+
+/* Start Hero section */
+.hero-img {
+  grid-column: 1/3;
+}
+/* End Hero section */
+
+/* start News section */
+.News {
+  background-color: var(--Very-dark-blue);
+  color: #fff;
+  padding: 3.2rem;
+  grid-column: 3/4;
+  grid-row: -1 / 3;
+}
+.News h2 {
+  color: var(--Soft-orange);
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+  font-weight: 600;
+}
+.heading-scondary {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.heading-scondary:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
+  transition: 0.3s;
+}
+hr {
+  margin: 1.6rem 0 2.4rem;
+}
+.description {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  color: var(--Grayish-blue);
+  margin-bottom: 2.6rem;
+}
+/* End News section */
+
+/* start opetions section */
+.opetions {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.opetions img {
+  width: 150px;
+  height: 150px;
+}
+.card-01,
+.card-02,
+.card-03 {
+  display: flex;
+  gap: 2.4rem;
+}
+.num {
+  color: #aaa;
+  font-size: 4.8rem;
+}
+.heading-theerd {
+  font-weight: 700;
+  color: var(--Very-dark-blue);
+  font-size: 2rem;
+  margin: 0.7rem 0;
+}
+.heading-theerd:hover {
+  color: var(--Soft-red);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.desc {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: var(--Dark-grayish-blue);
+}
+/* End opetions section */
+
+/* start future section */
+.futureHead {
+  font-size: 7rem;
+  width: 100%;
+  color: var(--Very-dark-blue);
+}
+/* End future section */
+
+/* start description section */
+.main-description {
+  position: relative;
+  line-height: 2;
+  font-size: 1.8rem;
+  color: var(--Dark-grayish-blue);
+}
+.btn-read-more {
+  position: absolute;
+  bottom: 0;
+  padding: 1.8rem 6.4rem;
+  background-color: var(--Soft-red);
+  border: none;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn-read-more:hover {
+  background-color: var(--Very-dark-blue);
+  transition: 0.3s;
+}
+/* End description section */
+
+/* Start Footer */
+.attribution {
+  color: var(--Very-dark-blue);
+  margin: 2.4rem 0;
+  font-size: 2rem;
+  left: 50%;
+  bottom: 5px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: underline;
+  color: var(--Dark-grayish-blue);
+}
+.attribution a:hover {
+  color: var(--Soft-red);
+}
+/* End Footer */
+
